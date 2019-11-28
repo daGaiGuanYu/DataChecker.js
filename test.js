@@ -8,7 +8,6 @@ let data = {
 
 let rule = {
   name: '名字不可为空',
-  school: '学校不可为空',
   tel: {
     allowNull: true,
     reg: /[0-9]/,
