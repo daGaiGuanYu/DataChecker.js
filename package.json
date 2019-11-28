@@ -1,5 +1,5 @@
 {
-  "name": "data-checker",
+  "name": "simple-data-checker",
   "version": "1.0.0",
   "description": "检查表单数据",
   "main": "index.js",
