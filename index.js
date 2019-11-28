@@ -15,5 +15,10 @@ module.exports = function check(data, rule){
     
     if(!ruleItem.allowNull&&!value)
       return ruleItem.nullmsg;
+    if(ruleItem.allowNull&&!value)
+      continue;
+    
+    if(ruleItem.regexp&&!ruleItem.regexp.test(value))
+      return ruleItem.regexpErrmsg;
   }
 }

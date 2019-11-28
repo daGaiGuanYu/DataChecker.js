@@ -2,7 +2,6 @@ const check = require('./index');
 
 let data = {
   name: '韦现法',
-  tel: 123456,
   year: 12
 }
 
@@ -15,8 +14,8 @@ let rule = {
   },
   year: {
     nullmsg: '年龄字段不可为空',
-    reg: /s/,
-    regErrmsg: '年龄格式不正确'
+    regexp: /\d/,
+    regexpErrmsg: '年龄格式不正确'
   }
 }
 
