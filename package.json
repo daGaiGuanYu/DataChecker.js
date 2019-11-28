@@ -1,0 +1,19 @@
+{
+  "name": "data-checker",
+  "version": "1.0.0",
+  "description": "检查表单数据",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daGaiGuanYu/DataChecker.js.git"
+  },
+  "author": "gy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daGaiGuanYu/DataChecker.js/issues"
+  },
+  "homepage": "https://github.com/daGaiGuanYu/DataChecker.js#readme"
+}
