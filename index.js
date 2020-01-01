@@ -5,7 +5,14 @@ module.exports = function check(data, rule){
   for(var key in rule){
     let ruleItem = rule[key];
     let value = data[key];
-    console.log('正在检查'+key);
+    // ruleItem 是函数
+    if(typeof(ruleItem) == 'function'){
+      let errmsg = ruleItem(value);
+      if(errmsg)
+        return errmsg;
+      continue;
+    }
+
     // ruleItem 是字符串时（空校验）
     if(typeof(ruleItem) == 'string' || ruleItem instanceof String){ // 空校验
       if(!value)

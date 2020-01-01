@@ -1,6 +1,6 @@
 {
   "name": "simple-data-checker",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "检查表单数据",
   "main": "index.js",
   "scripts": {
